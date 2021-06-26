@@ -35,10 +35,10 @@
                         <a href="blog.php">Blog</a>
                         <a href="contacto.php">Contacto</a>
                         <?php if(!$auth): ?>
-                            <a href="login.php">Login</a>
+                            <a href="/login.php">Login</a>
                         <?php endif; ?>
                         <?php if($auth): ?>
-                            <a href="cerrar-sesion.php">Cerrar Sesión</a>
+                            <a href="/cerrar-sesion.php">Cerrar Sesión</a>
                         <?php endif; ?>
                     </nav>
                 </div>

@@ -18,7 +18,10 @@
 table.propiedades {
     margin-top: 4rem;
     width: 100%;
-    border-spacing: 0;
+    // border-spacing: 0;
+    color: $blanco;
+    font-weight: $bold;
+    text-transform: uppercase;
 
     thead {
         background-color: $verde;
@@ -28,12 +31,35 @@ table.propiedades {
             padding: 2rem;
         }
     }
+    
+    tbody{
+        td{
+            padding: 1.5rem;
+
+        }
+          
+       
+        tr:nth-child(odd){
+            background-color: lighten($grisOscuro, 5);                   
+        }
+       
+
+        tr:nth-child(even){
+               background-color: lighten($grisOscuro,1);
+               color: $negro; 
+           }
+       
+    }
+    
 
     .imagen-tabla {
         width: 10rem;
     }
+
+   
 }
 
 .imagen-small {
     width: 20rem;
 }
+

@@ -1,14 +1,17 @@
 <?php 
 
-    require '../includes/funciones.php';
-    $auth = estaAutenticado();
+    require '../includes/app.php';
 
+    
+    $auth = estaAutenticado();
+    
     if(!$auth) {
         header('Location: /');
     }
-
+    
+    incluirTemplate('header');
     // Importar la conexión
-    require '../includes/config/database.php';
+    // require '../includes/config/database.php';
     $db = conectarDB();
 
     // Escribir el Query
@@ -52,7 +55,7 @@
 
     // Incluye un template
 
-    incluirTemplate('header');
+    
 ?>
 
     <main class="contenedor seccion">

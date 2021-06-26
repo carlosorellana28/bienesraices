@@ -1,0 +1,17 @@
+{
+    "name": "orell/bienes-raices-php_fin",
+    "description": "creando proyecto de POO",
+    "type": "proyect",
+    "authors": [
+        {
+            "name": "carlosorellana28",
+            "email": "73434466+carlosorellana28@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    }
+}

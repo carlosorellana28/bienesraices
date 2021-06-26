@@ -1,6 +1,6 @@
 <?php 
 
-    require '../../includes/funciones.php';
+    require '../../includes/app.php';
     $auth = estaAutenticado();
 
     if(!$auth) {
@@ -8,8 +8,8 @@
     }
 
     // Base de datos
-    require '../../includes/config/database.php';
-    $db = conectarDB();
+    // require '../../includes/config/database.php';
+   $db=conectarDB();
 
     // Consultar para obtener los vendedores
     $consulta = "SELECT * FROM vendedores";
@@ -33,9 +33,9 @@
         // var_dump($_POST);
         // echo "</pre>";
 
-        echo "<pre>";
-        var_dump($_FILES);
-        echo "</pre>";
+        // echo "<pre>";
+        // var_dump($_FILES);
+        // echo "</pre>";
 
 
         $titulo = mysqli_real_escape_string( $db,  $_POST['titulo'] );
